@@ -53,7 +53,8 @@ docker run -v "$PWD"/metadata/root_folder_example:/profyle_dir \
 # PRO-000BC2
 # Verifying Dataset PROFYLE
 
-docker run -v "$PWD"/outdir:/ga4gh_dir -p 8000:8000 quay.io/ljdursi/profyle_ingest_docker serve /ga4gh_dir
+docker run -v "$PWD"/outdir:/ga4gh_dir -p 8000:8000 \
+    quay.io/ljdursi/profyle_ingest_docker serve /ga4gh_dir
 #  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
 #  * Restarting with stat
 #  * Debugger is active!
