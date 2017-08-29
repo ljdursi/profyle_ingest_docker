@@ -1,4 +1,4 @@
-# ga4gh_directory
+# profyle_ingest_directory
 
 This is a simple docker for starting up a GA4GH server which serves access to test PROFYLE metadata.
 
