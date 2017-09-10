@@ -1,11 +1,10 @@
 FROM ubuntu:17.04
 MAINTAINER Jonathan Dursi <jonathan@dursi.ca>
-LABEL Description="Start up a GA4GH server against on a directory"
+LABEL Description="Start up a GA4GH server against a directory of PROFYLE metadata"
 
 RUN apt-get update \
     && apt-get install -y \
         git \
-        libapache2-mod-wsgi \
         libcurl4-openssl-dev \
         libffi-dev \
         libssl-dev \
