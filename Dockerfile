@@ -17,9 +17,9 @@ RUN apt-get update \
         wget \
         zlib1g-dev 
 
-RUN pip install git+https://github.com/CanDIG/ga4gh-schemas.git@experiment_genotype#egg=ga4gh_schemas \
-    && pip install git+https://github.com/CanDIG/ga4gh-client.git@experiment_genotype#egg=ga4gh_client \
-    && pip install git+https://github.com/CanDIG/ga4gh-server.git@experiment_genotype#egg=ga4gh_server \
+RUN pip install git+https://github.com/CanDIG/ga4gh-schemas.git@master#egg=ga4gh_schemas \
+    && pip install git+https://github.com/CanDIG/ga4gh-client.git@master#egg=ga4gh_client \
+    && pip install git+https://github.com/CanDIG/ga4gh-server.git@master#egg=ga4gh_server \
     && pip install git+https://github.com/CanDIG/PROFYLE_ingest.git 
 
 # copy run scripts
